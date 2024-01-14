@@ -75,7 +75,7 @@ resource "kubernetes_ingress_v1" "example" {
       rule {
         http {
          path {
-           path = "/"
+           path = "/*"
            backend {
              service {
                name = var.service_name

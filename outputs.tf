@@ -31,15 +31,15 @@ output "private_rt" {
   value = module.aws_vpc.private_route_table_ids
 }
 
-# output "eks_cluster_endpoint" {
-#   value = module.aws_eks.eks_cluster_endpoint
-# }
+output "eks_cluster_endpoint" {
+  value = module.aws_eks.eks_cluster_endpoint
+}
 
-# output "eks_cluster_ca_certificate" {
-#   description = "The base64-encoded PEM-encoded certificate authority (CA) certificate for the EKS cluster"
-#   value       = module.aws_eks.eks_cluster_ca_certificate
-# }
+output "eks_cluster_ca_certificate" {
+  description = "The base64-encoded PEM-encoded certificate authority (CA) certificate for the EKS cluster"
+  value       = module.aws_eks.eks_cluster_ca_certificate
+}
 
-# output "load_balancer_hostname" {
-#   value = module.deployment.load_balancer_hostname
-# }
+output "load_balancer_hostname" {
+  value = module.deployment.load_balancer_hostname
+}
