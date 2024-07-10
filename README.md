@@ -1,7 +1,7 @@
-Terraform Module: One-Click AWS Infrastructure Deployment
+  #Terraform Module: One-Click AWS Infrastructure Deployment
 This Terraform module provides a one-click solution to set up an AWS infrastructure including VPC, EKS, and ALB. It builds a Docker image from your application code, pushes it to Docker Hub, and deploys it using Helm charts. The module outputs the end URL to access the deployed application.
 
-Contents
+  #Contents
 Prerequisites
 Usage
 Module Structure
@@ -52,7 +52,7 @@ Dockerfile: Dockerfile for building the Docker image from the application code.
 data.tf: Terraform data sources configuration file.
 index.html: Sample index.html file for the application.
 Screenshot from 2024-01-15 23-20-03.png: Screenshot image file.
-Inputs
+  #Inputs
 Specify any input variables your module requires in this section. Example:
 
 hcl
@@ -83,6 +83,5 @@ output "application_url" {
   description = "URL to access the deployed application"
   value       = aws_lb.this.dns_name
 }
-License
-This project is licensed under the MIT License.
+
 
